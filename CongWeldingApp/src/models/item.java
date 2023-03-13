@@ -9,7 +9,14 @@ private int itemPrice;
 private int itemAmount;
 private int itemSold;
 
-
+public item() {
+	itemName = null;
+	itemID = null;
+	itemTYPE = null;
+	itemPrice = 0;
+	itemAmount = 0;
+	itemSold = 0;
+}
 
 public item(String itemName, String itemID, String itemTYPE, int itemPrice) {
 	super();

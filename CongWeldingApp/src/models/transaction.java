@@ -3,11 +3,20 @@ package models;
 public class transaction {
 	
 	private int transactionID;
-	private int transactionTYPE; // I for in-transaction; O for out-transaction
+	private char transactionTYPE; // I for in-transaction; O for out-transaction
 	private customer transactionCustomer;
+	private Character character;
+	
+	public transaction() {
+		transactionID = 0;
+		character = (Character) null;
+		transactionTYPE = character;
+		transactionCustomer = null;
+		
+	}
 	
 	
-	public transaction(int transactionID, int transactionTYPE, customer transactionCustomer) {
+	public transaction(int transactionID, char transactionTYPE, customer transactionCustomer) {
 		super();
 		this.transactionID = transactionID;
 		this.transactionTYPE = transactionTYPE;
@@ -30,7 +39,7 @@ public class transaction {
 	}
 
 
-	public void setTransactionTYPE(int transactionTYPE) {
+	public void setTransactionTYPE(char transactionTYPE) {
 		this.transactionTYPE = transactionTYPE;
 	}
 

@@ -7,6 +7,16 @@ private String customerName;
 private char customerTYPE; // (I) for source, distributer | (O) for out customers 
 private String customerPhone;
 private String customerAddress;
+private Character character;
+
+public customer() {
+	customerID = 0;
+	customerName = null;
+	character = (Character) null;
+	customerTYPE = character;
+	customerPhone = null;
+	customerAddress = null;
+}
 
 public customer(int customerID, String customerName, char customerTYPE) {
 	super();
